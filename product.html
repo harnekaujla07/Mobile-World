@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 8px;
+  resize: vertical;
+  }
+  input[type=number], select, number {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 8px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Order The Products</h1>
+<p>Please fill the order form below with the items you want to purchase.</p>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname">
+	<label for="email">Email</label>
+    <input type="text" name="email" id="email">
+	<label for="Phone Number">Phone Number</label>
+	<input type="number" name="Phone Number" id="Phone Number">
+
+	<label for="Quantity">Quantity</label>
+	<input type="number" name="Quanrity" id="Quantity">
+	<label for="Mobile World">Products</label>
+    <select id="Products" name="Products">
+      <option value="iphone">iphone</option>
+      <option value="Battery">Battery</option>
+      <option value="Bluetooth">Bluetooth</option>
+	  <option value="Airpods">Airpods</option>
+      <option value="Phone charger">Phone charger</option>
+	  <option value="Cable">Cable</option>
+    </select>
+
+    
+  <input type="submit" value="Submit">
+
+  </form>
+</div>
+
+</body>
+</html>
